@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Ajalya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: beige;
+      color: black;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: maroon;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: beige;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: beige;
+      font-weight: 500;
+    }
+
+    nav a.active {
+      color: beige;
+      border-bottom: 2px solid beige;
+      padding-bottom: 2px;
+    }
+
+    section {
+      padding: 80px 50px;
+    }
+
+    section.active-section {
+      display: block;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .intro-text h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .intro-text h1 span {
+      color: maroon;
+    }
+
+    .contact-btn, .resume-btn {
+      background-color: maroon;
+      color: beige;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-right: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .contact-btn:hover, .resume-btn:hover {
+      background-color: maroon;
+    }
+
+    .hero-img {
+      background-color: maroon;
+      border-radius: 50% 45% 50% 50%;
+      padding: 20px;
+    }
+
+    .hero-img img {
+      border-radius: 50%;
+      width: 300px;
+      height: auto;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .about, .skills, .works, .contact, .education {
+      background-color: beige;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      list-style: none;
+    }
+
+    .skills li {
+      background: maroon;
+      color: beige;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+
+    .works .project {
+      margin-bottom: 15px;
+    }
+
+    .works .project img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+
+    .works .project a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    .education ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .education li {
+      margin-bottom: 15px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .contact-info {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    footer a img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AJALYA </h1>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="intro-text">
+      <h1>Hi,<br>I’m <span>Ajalya</span><br>First year BTech student</h1>
+      <a href="#contact" class="contact-btn">Contact</a>
+      <a href="https://drive.google.com/file/d/14Zvc9rPppTrLrhrSZxZLA_3LpeSGDCeu/view" class="resume-btn" target="_blank">View Resume</a>
+    </div>
+    <div class="hero-img">
+      <img src="https://drive.google.com/thumbnail?id=1_3pBLQXKs0TLkIIkr6INlzTcrgIcyicf" alt="Profile Picture">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p> A passionate and dedicated first-year BTech student in
+ Computer Science Engineering. I'm excited to explore the world of computer science and learn about the latest technologies and trends. I'm currently learning programming languages like Java and Python, and I'm looking forward to building projects and gaining hands-on experience." </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Java</li>
+      <li>C</li>
+      <li>Python</li>
+      <li>UI/UX Design</li>
+    </ul>
+  </section>
+
+  <section id="education" class="education">
+    <h2 class="section-title">Education</h2>
+    <ul>
+      <li>
+        <strong>Bachelor of Technology in Computer Science</strong><br>
+        Amrita Vishwa Vidyapeetham, 2024 - Present
+      </li>
+      <li>
+        <strong>Higher Secondary School</strong><br>
+        Chandan Brothers Higher Secondary School, 2021 - 2023
+      </li>
+      <li>
+        <strong>Middle School</strong><br>
+        Timpany Senior Secondary School
+      </li>
+    </ul>
+  </section>
+
+  <section id="works" class="works">
+    <h2 class="section-title">Works</h2>
+    <div class="project">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBBJz7SOXgeMVIePpSabTd_6u_jKQYbiDQfQ&s" alt="Project 1">
+      <p> Technical Communication Project  - <a href="https://drive.google.com/file/d/1q-AtRZJXInFVlbA8BsJXCKCpbi_WqTtL/view">View project</a></p>
+    </div>
+    <div class="project">
+      <img src="https://www.electroniclinic.com/wp-content/uploads/2020/07/ESP32-CAM-Connection-with-Arduino-Circuit-Diagram.jpg" alt="Project 2">
+      <p> EEE Project - <a href="https://docs.google.com/document/d/1g7R2u4tmJmLYQcraelU_wNjnFmHXl-0k/edit?usp=sharing&ouid=118199999496133956328&rtpof=true&sd=true">View project</a></p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> tmajalya@gmail.com</p>
+      <p><strong>Phone:</strong> 8891524954</p>
+      <p><strong>Location:</strong> Kozhikode, India</p>
+    </div>
+  </section>
+
+  <footer>
+    <a href="http://linkedin.com/in/ajalya-t-m-296803322"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+    <a href="https://www.instagram.com/ajalya_sunil?igsh=MXkwdHpmY2l5cmFtMA%3D%3D&utm_source=qr"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram"></a>
+    <a href="https://github.com/Ajalya"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"></a>
+  </footer>
+</body>
+</html>
